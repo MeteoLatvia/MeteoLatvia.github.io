@@ -4,6 +4,8 @@ import { Search, Menu, X, Globe } from 'lucide-react';
 
 const navLinks = [
   { name: 'Sākums', path: '/' },
+  { name: 'Radars', path: '/radars' },
+  { name: 'Satelīts', path: '/satelits' },
   { name: 'Karte', path: '/karte' },
   { name: 'Prognoze', path: '/prognoze' },
   { name: 'Brīdinājumi', path: '/bridinajumi' },

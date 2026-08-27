@@ -7,6 +7,8 @@ import { Alerts } from './pages/Alerts';
 import { About } from './pages/About';
 import { Blog } from './pages/Blog';
 import { BlogPost } from './pages/BlogPost';
+import { Radar } from './pages/Radar';
+import { Satellite } from './pages/Satellite';
 
 const NotFound = () => (
   <div className="flex flex-col items-center justify-center py-20 text-center">
@@ -20,6 +22,8 @@ function App() {
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
+        <Route path="/radars" element={<Radar />} />
+        <Route path="/satelits" element={<Satellite />} />
         <Route path="/karte" element={<Map />} />
         <Route path="/prognoze" element={<Forecast />} />
         <Route path="/bridinajumi" element={<Alerts />} />
