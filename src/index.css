@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+  --color-primary: #05193b;
+  --color-secondary: #00a6e1;
+  --color-alert: #FACC15;
+  --color-warning: #F97316;
+  --color-emergency: #DC2626;
+  --color-high-emphasis: #F8FAFC;
+  --color-medium-emphasis: #94A3B8;
+  --color-low-emphasis: #64748B;
+  --color-ocean: #0F172A;
+  --color-landmass: #1E293B;
+  --color-border: #334155;
+  --color-background: #0B0F19;
+
+  --font-sans: 'Inter', sans-serif;
+}
+
+:root {
+  --primary: #05193b;
+  --secondary: #00a6e1;
+  --alert: #FACC15;
+  --warning: #F97316;
+  --emergency: #DC2626;
+  --high-emphasis: #F8FAFC;
+  --medium-emphasis: #94A3B8;
+  --low-emphasis: #64748B;
+  --ocean: #0F172A;
+  --landmass: #1E293B;
+  --border: #334155;
+  --background: #0B0F19;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--high-emphasis);
+}
+
+/* Custom scrollbar for a cinematic feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--low-emphasis);
+}
